@@ -60,8 +60,13 @@ function generatePassword() {
     allowedCharacters = allowedCharacters.concat(characters.symbols);
   }
 
-  console.log(output);
-  console.log(allowedCharacters);
+  // Fill in the rest of the password with any allowed characters
+  while (output.length < passwordLength) {
+    output = output.concat(randomElement(allowedCharacters));
+  }
+
+  // Return the finished password
+  return output
 }
 
 // Get references to the #generate element
