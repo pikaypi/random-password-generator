@@ -1,5 +1,13 @@
 // Assignment code here
 
+// Create an object to hold all possible characters
+var characters = {
+    lower: "abcdefghijklmnopqrstuvwxyz",
+    upper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    numbers: "0123456789",
+    symbols: " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
+}
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
