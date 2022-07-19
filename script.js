@@ -40,25 +40,28 @@ function generatePassword() {
    * 2. Include a random character of that type in the working password
    * 3. Add that type to the list of allowed characters
    */
-    if (prompt("Would you like to include lowercase letters?")) {
+  if (confirm("Would you like to include lowercase letters?")) {
     output = output.concat(randomElement(characters.lower));
-    allowedCharacters = allowedCharacters.concat(characters.lower)
+    allowedCharacters = allowedCharacters.concat(characters.lower);
   }
 
-  if (prompt("Would you like to include uppercase letters?")) {
+  if (confirm("Would you like to include uppercase letters?")) {
     output = output.concat(randomElement(characters.upper));
-    allowedCharacters = allowedCharacters.concat(characters.upper)
+    allowedCharacters = allowedCharacters.concat(characters.upper);
   }
 
-  if (prompt("Would you like to include numbers?")) {
+  if (confirm("Would you like to include numbers?")) {
     output = output.concat(randomElement(characters.numbers));
-    allowedCharacters = allowedCharacters.concat(characters.numbers)
+    allowedCharacters = allowedCharacters.concat(characters.numbers);
   }
 
-  if (prompt("Would you like to include special symbols?")) {
+  if (confirm("Would you like to include special symbols?")) {
     output = output.concat(randomElement(characters.symbols));
-    allowedCharacters = allowedCharacters.concat(characters.symbols)
+    allowedCharacters = allowedCharacters.concat(characters.symbols);
   }
+
+  console.log(output);
+  console.log(allowedCharacters);
 }
 
 // Get references to the #generate element
