@@ -21,12 +21,12 @@ function generatePassword() {
   // Make sure the length is an integer or restart the function
   if (passwordLength % 1 !== 0) {
       alert("Password length must be an integer");
-      generatePassword();
+      return
 
   // Make sure the length is between 8 and 128 or restart the function
   } else if (passwordLength < 8 || passwordLength > 128) {
       alert("Passwords must be between 8 and 128 characters");
-      generatePassword();
+      return
   }
 
   // Create a variable to store the password as it is build
