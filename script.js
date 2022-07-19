@@ -16,7 +16,7 @@ function randomElement(x) {
 // A function that takes in user criteria and generates a password
 function generatePassword() {
   // Prompt user for password length and store as a float
-  var passwordLength = parseFloat(prompt("How long would you like your password to be?", 10));
+  var passwordLength = parseFloat(prompt("How long would you like your password to be?"));
 
   // Make sure the length is an integer or restart the function
   if (passwordLength % 1 !== 0) {
