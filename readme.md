@@ -11,7 +11,7 @@ In this project I created a JavaScript file that prompts a user for specific cri
 The application is deployed [here](https://pikaypi.github.io/random-password-generator/).
 
 ## What It Looks Like
-![A screenshot of the password generator application](./screenshot.png)
+![A screenshot of the password generator application](./assets/images/screenshot.png)
 
 ## How It Works
 When the user clicks the "Generate Password" button, they are prompted to select a password length. If the value provided by the user is not an integer between 8 and 128, an error alert will appear telling the user why their input was invalid. If the password length is valid, the user will then receive a prompt to confirm inclusion of each of the four sets of characters - lowercase letters, uppercase letters, numbers, and special symbols. Once the final prompt has been answered, the generated password appears in the text box.
