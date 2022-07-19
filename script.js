@@ -29,6 +29,12 @@ function generatePassword() {
         generatePassword();
     }
 
+        // Create a variable to store the password as it is build
+        var output = "";
+
+        // Create a variable to store all allowed characters
+        var allowedCharacters = "";
+
 }
 
 // Get references to the #generate element
