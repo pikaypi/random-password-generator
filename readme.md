@@ -1,5 +1,5 @@
 # Project 3 - Random Password Generator
-In this project I created a JavaScript file that prompts a user for specific criteria and generates a random password that meets those criteria. The application neede to meet the following acceptance criteria:
+In this project I created a JavaScript file that prompts a user for specific criteria and generates a random password that meets those criteria. The application needed to meet the following acceptance criteria:
 * When the "Generate Password" button is clicked, the user is presented with a series of prompts about the password character criteria
 * When the password length is entered, only integer values between 8 and 128 will be accepted
 * The user will be prompted to included or exclude lowercase letters, uppercase letters, numbers, and special symbols
